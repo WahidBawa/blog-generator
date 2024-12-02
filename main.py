@@ -3,6 +3,10 @@ import os
 from functools import partial
 from utils import generate_blog, write_to_docx
 from multiprocessing import Pool
+from dotenv import load_dotenv
+
+
+load_dotenv()
 
 
 def process_blog(title: str, folder_name: str):
